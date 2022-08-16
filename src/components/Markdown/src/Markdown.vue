@@ -91,7 +91,7 @@
         const extraData = {};
         const lskyVersionUpper = lskyVersion.toUpperCase();
         if (lskyVersionUpper === 'V2') {
-          uploadHeaders['Authorization'] = uploadToken;
+          uploadHeaders['Authorization'] = 'Bearer ' + uploadToken;
           uploadHeaders['Accept'] = 'application/json';
           if (lskyStrategyId) extraData['strategy_id'] = lskyStrategyId;
         } else if (lskyVersionUpper === 'V1') {
