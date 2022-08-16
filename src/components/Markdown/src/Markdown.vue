@@ -164,7 +164,7 @@
           },
           upload: {
             url: uploadUrl,
-            fieldName: 'file',
+            fieldName: lskyVersionUpper === 'V2' ? 'file' : 'image',
             headers: uploadHeaders,
             multiple: false,
             linkToImgUrl: uploadUrl,
