@@ -29,7 +29,7 @@ export const useGlobSetting = (): Readonly<GlobConfig> => {
     urlPrefix: VITE_GLOB_API_URL_PREFIX || '/api',
     uploadUrl: VITE_GLOB_UPLOAD_URL,
     uploadToken: VITE_GLOB_UPLOAD_TOKEN || '',
-    lskyVersion: VITE_GLOB_LSKY_VERSION || 'V1',
+    lskyVersion: VITE_GLOB_LSKY_VERSION || 'V2',
     lskyStrategyId: VITE_GLOB_LSKY_STRATEGY_ID || '',
   };
   return glob as Readonly<GlobConfig>;
